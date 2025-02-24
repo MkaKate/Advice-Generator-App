@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(218, 23%, 16%);
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    background-color: hsl(217, 19%, 24%);
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 450px;
+    position: relative;
+}
+
+.advice-number{
+    color: hsl(150, 100%, 66%);
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.advice-text {
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+    margin: 20px 0;
+    line-height: 1.4;
+
+}
+
+.line,
+  img {
+    display: block;
+  }
+
+  .line img {
+    width: 100%;
+    margin: 30px 0px;
+  }
+
+.btn{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    background-color:  hsl(150, 100%, 66%);
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    box-shadow:  0 0 2em hsl(150, 97%, 59%);
+} 
+
+@media (max-width: 374px) {  /* для екранів до 374px включно */
+    .container {
+        max-width: 250px;
+        padding: 20px;
+    }
+
+    .advice-text {
+        font-size: 18px;
+    }
+
+    .advice-number {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    
+}
+
+@media (min-width: 375px) and (max-width: 550px) { /* для екранів 375px - 550px */
+    .container {
+        max-width: 340px;
+        padding: 20px;
+    }
+
+    .advice-text {
+        font-size: 25px;
+    }
+
+    .advice-number {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 450px;
+        padding: 30px;
+    }
+    
+    .advice-text {
+        font-size: 28px;
+    }
+
+    .advice-number {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+}
